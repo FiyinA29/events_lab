@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function displayCoordinates(event) {
+            x = event.screenX;
+            y = event.screenY;
+            coordinates = `X = "${x}" <br>Y = "${y}"`;
+            document.getElementById("msg").innerHTML = coordinates;
+        }
+    </script>
+</head>
+
+<body>
+
+    <div onmousedown="displayCoordinates(event)" style="background-color:royalblue; width:450px;height:200px;"></div>
+
+    <p>
+        Click the above div, to display the x and y coordinates of the cursor.
+    </p>
+
+    <p id="msg" style="font-size:5em;"></p>
+
+</body>
+
+</html>
+
+<!-- 
+    TODO 
+    try to figure out what to do on your own (based on line 15 and the gif)
+ -->
